@@ -12,6 +12,7 @@
 		24879DED1BE2918300299C5E /* TSZHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DEC1BE2918300299C5E /* TSZHomeTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		24879DF01BE2919000299C5E /* TSZMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DEF1BE2919000299C5E /* TSZMessageTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		24879DF31BE2919C00299C5E /* TSZMineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DF21BE2919C00299C5E /* TSZMineTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		24879DF61BE29B6300299C5E /* TSZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DF51BE29B6300299C5E /* TSZNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		24A8C7671BE288A60051788B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C7661BE288A60051788B /* main.m */; };
 		24A8C76A1BE288A60051788B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C7691BE288A60051788B /* AppDelegate.m */; };
 		24A8C7721BE288A60051788B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A8C7711BE288A60051788B /* Assets.xcassets */; };
@@ -21,14 +22,16 @@
 /* Begin PBXFileReference section */
 		24879DE51BE290AD00299C5E /* TSZTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZTabBarViewController.h; sourceTree = "<group>"; };
 		24879DE61BE290AD00299C5E /* TSZTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZTabBarViewController.m; sourceTree = "<group>"; };
-		24879DE81BE2916D00299C5E /* TSZDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZDiscoverTableViewController.h; sourceTree = "<group>"; };
-		24879DE91BE2916D00299C5E /* TSZDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZDiscoverTableViewController.m; sourceTree = "<group>"; };
-		24879DEB1BE2918300299C5E /* TSZHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZHomeTableViewController.h; sourceTree = "<group>"; };
-		24879DEC1BE2918300299C5E /* TSZHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZHomeTableViewController.m; sourceTree = "<group>"; };
-		24879DEE1BE2919000299C5E /* TSZMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZMessageTableViewController.h; sourceTree = "<group>"; };
-		24879DEF1BE2919000299C5E /* TSZMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZMessageTableViewController.m; sourceTree = "<group>"; };
-		24879DF11BE2919C00299C5E /* TSZMineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZMineTableViewController.h; sourceTree = "<group>"; };
-		24879DF21BE2919C00299C5E /* TSZMineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZMineTableViewController.m; sourceTree = "<group>"; };
+		24879DE81BE2916D00299C5E /* TSZDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSZDiscoverTableViewController.h; path = ../TSZDiscoverTableViewController.h; sourceTree = "<group>"; };
+		24879DE91BE2916D00299C5E /* TSZDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSZDiscoverTableViewController.m; path = ../TSZDiscoverTableViewController.m; sourceTree = "<group>"; };
+		24879DEB1BE2918300299C5E /* TSZHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSZHomeTableViewController.h; path = ../TSZHomeTableViewController.h; sourceTree = "<group>"; };
+		24879DEC1BE2918300299C5E /* TSZHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSZHomeTableViewController.m; path = ../TSZHomeTableViewController.m; sourceTree = "<group>"; };
+		24879DEE1BE2919000299C5E /* TSZMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSZMessageTableViewController.h; path = ../TSZMessageTableViewController.h; sourceTree = "<group>"; };
+		24879DEF1BE2919000299C5E /* TSZMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSZMessageTableViewController.m; path = ../TSZMessageTableViewController.m; sourceTree = "<group>"; };
+		24879DF11BE2919C00299C5E /* TSZMineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSZMineTableViewController.h; path = ../TSZMineTableViewController.h; sourceTree = "<group>"; };
+		24879DF21BE2919C00299C5E /* TSZMineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSZMineTableViewController.m; path = ../TSZMineTableViewController.m; sourceTree = "<group>"; };
+		24879DF41BE29B6300299C5E /* TSZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZNavigationController.h; sourceTree = "<group>"; };
+		24879DF51BE29B6300299C5E /* TSZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZNavigationController.m; sourceTree = "<group>"; };
 		24A8C7621BE288A60051788B /* MicroFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A8C7661BE288A60051788B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24A8C7681BE288A60051788B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 		24879DE01BE28CF800299C5E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				24879DF41BE29B6300299C5E /* TSZNavigationController.h */,
+				24879DF51BE29B6300299C5E /* TSZNavigationController.m */,
 				24879DE51BE290AD00299C5E /* TSZTabBarViewController.h */,
 				24879DE61BE290AD00299C5E /* TSZTabBarViewController.m */,
 			);
@@ -129,8 +134,6 @@
 			children = (
 				24A8C77E1BE289B30051788B /* Controller */,
 				24A8C77F1BE289B30051788B /* View */,
-				24879DE81BE2916D00299C5E /* TSZDiscoverTableViewController.h */,
-				24879DE91BE2916D00299C5E /* TSZDiscoverTableViewController.m */,
 			);
 			path = "Discover(发现)";
 			sourceTree = "<group>";
@@ -138,6 +141,8 @@
 		24A8C77E1BE289B30051788B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				24879DE81BE2916D00299C5E /* TSZDiscoverTableViewController.h */,
+				24879DE91BE2916D00299C5E /* TSZDiscoverTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,8 +159,6 @@
 			children = (
 				24A8C7811BE289B30051788B /* Controller */,
 				24A8C7821BE289B30051788B /* View */,
-				24879DEB1BE2918300299C5E /* TSZHomeTableViewController.h */,
-				24879DEC1BE2918300299C5E /* TSZHomeTableViewController.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -163,6 +166,8 @@
 		24A8C7811BE289B30051788B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				24879DEB1BE2918300299C5E /* TSZHomeTableViewController.h */,
+				24879DEC1BE2918300299C5E /* TSZHomeTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,8 +184,6 @@
 			children = (
 				24A8C7841BE289B30051788B /* Controller */,
 				24A8C7851BE289B30051788B /* View */,
-				24879DEE1BE2919000299C5E /* TSZMessageTableViewController.h */,
-				24879DEF1BE2919000299C5E /* TSZMessageTableViewController.m */,
 			);
 			path = "Message(消息)";
 			sourceTree = "<group>";
@@ -188,6 +191,8 @@
 		24A8C7841BE289B30051788B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				24879DEE1BE2919000299C5E /* TSZMessageTableViewController.h */,
+				24879DEF1BE2919000299C5E /* TSZMessageTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,8 +209,6 @@
 			children = (
 				24A8C7871BE289B30051788B /* Controller */,
 				24A8C7881BE289B30051788B /* View */,
-				24879DF11BE2919C00299C5E /* TSZMineTableViewController.h */,
-				24879DF21BE2919C00299C5E /* TSZMineTableViewController.m */,
 			);
 			path = "Mine(我)";
 			sourceTree = "<group>";
@@ -213,6 +216,8 @@
 		24A8C7871BE289B30051788B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				24879DF11BE2919C00299C5E /* TSZMineTableViewController.h */,
+				24879DF21BE2919C00299C5E /* TSZMineTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24879DEA1BE2916D00299C5E /* TSZDiscoverTableViewController.m in Sources */,
+				24879DF61BE29B6300299C5E /* TSZNavigationController.m in Sources */,
 				24879DF01BE2919000299C5E /* TSZMessageTableViewController.m in Sources */,
 				24879DE71BE290AD00299C5E /* TSZTabBarViewController.m in Sources */,
 				24879DF31BE2919C00299C5E /* TSZMineTableViewController.m in Sources */,
