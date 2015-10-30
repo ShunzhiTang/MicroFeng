@@ -13,6 +13,11 @@
 		24879DF01BE2919000299C5E /* TSZMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DEF1BE2919000299C5E /* TSZMessageTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		24879DF31BE2919C00299C5E /* TSZMineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DF21BE2919C00299C5E /* TSZMineTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		24879DF61BE29B6300299C5E /* TSZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DF51BE29B6300299C5E /* TSZNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		24879DF91BE2DB2F00299C5E /* TSZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DF81BE2DB2F00299C5E /* TSZTabBar.m */; settings = {ASSET_TAGS = (); }; };
+		24879E011BE2E61D00299C5E /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879DFD1BE2E61D00299C5E /* MBProgressHUD+MJ.m */; settings = {ASSET_TAGS = (); }; };
+		24879E021BE2E61D00299C5E /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24879DFE1BE2E61D00299C5E /* MBProgressHUD.bundle */; settings = {ASSET_TAGS = (); }; };
+		24879E031BE2E61D00299C5E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879E001BE2E61D00299C5E /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
+		24879E071BE2E83D00299C5E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879E061BE2E83D00299C5E /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		24A8C7671BE288A60051788B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C7661BE288A60051788B /* main.m */; };
 		24A8C76A1BE288A60051788B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C7691BE288A60051788B /* AppDelegate.m */; };
 		24A8C7721BE288A60051788B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A8C7711BE288A60051788B /* Assets.xcassets */; };
@@ -32,6 +37,15 @@
 		24879DF21BE2919C00299C5E /* TSZMineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSZMineTableViewController.m; path = ../TSZMineTableViewController.m; sourceTree = "<group>"; };
 		24879DF41BE29B6300299C5E /* TSZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZNavigationController.h; sourceTree = "<group>"; };
 		24879DF51BE29B6300299C5E /* TSZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZNavigationController.m; sourceTree = "<group>"; };
+		24879DF71BE2DB2F00299C5E /* TSZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZTabBar.h; sourceTree = "<group>"; };
+		24879DF81BE2DB2F00299C5E /* TSZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZTabBar.m; sourceTree = "<group>"; };
+		24879DFC1BE2E61D00299C5E /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		24879DFD1BE2E61D00299C5E /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		24879DFE1BE2E61D00299C5E /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		24879DFF1BE2E61D00299C5E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		24879E001BE2E61D00299C5E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		24879E051BE2E83D00299C5E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		24879E061BE2E83D00299C5E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		24A8C7621BE288A60051788B /* MicroFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A8C7661BE288A60051788B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24A8C7681BE288A60051788B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,8 +69,10 @@
 		24879DDF1BE28CF800299C5E /* Main(主框架) */ = {
 			isa = PBXGroup;
 			children = (
+				24879E041BE2E81800299C5E /* Category */,
 				24879DE01BE28CF800299C5E /* Controller */,
 				24879DE11BE28CF800299C5E /* View */,
+				24879DFA1BE2E61000299C5E /* Lib */,
 			);
 			path = "Main(主框架)";
 			sourceTree = "<group>";
@@ -75,8 +91,39 @@
 		24879DE11BE28CF800299C5E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				24879DF71BE2DB2F00299C5E /* TSZTabBar.h */,
+				24879DF81BE2DB2F00299C5E /* TSZTabBar.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		24879DFA1BE2E61000299C5E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				24879DFB1BE2E61D00299C5E /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		24879DFB1BE2E61D00299C5E /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				24879DFC1BE2E61D00299C5E /* MBProgressHUD+MJ.h */,
+				24879DFD1BE2E61D00299C5E /* MBProgressHUD+MJ.m */,
+				24879DFE1BE2E61D00299C5E /* MBProgressHUD.bundle */,
+				24879DFF1BE2E61D00299C5E /* MBProgressHUD.h */,
+				24879E001BE2E61D00299C5E /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		24879E041BE2E81800299C5E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				24879E051BE2E83D00299C5E /* UIView+Extension.h */,
+				24879E061BE2E83D00299C5E /* UIView+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		24A8C7591BE288A60051788B = {
@@ -289,6 +336,7 @@
 			files = (
 				24A8C7751BE288A60051788B /* LaunchScreen.storyboard in Resources */,
 				24A8C7721BE288A60051788B /* Assets.xcassets in Resources */,
+				24879E021BE2E61D00299C5E /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +351,12 @@
 				24879DF61BE29B6300299C5E /* TSZNavigationController.m in Sources */,
 				24879DF01BE2919000299C5E /* TSZMessageTableViewController.m in Sources */,
 				24879DE71BE290AD00299C5E /* TSZTabBarViewController.m in Sources */,
+				24879E031BE2E61D00299C5E /* MBProgressHUD.m in Sources */,
 				24879DF31BE2919C00299C5E /* TSZMineTableViewController.m in Sources */,
+				24879E071BE2E83D00299C5E /* UIView+Extension.m in Sources */,
 				24879DED1BE2918300299C5E /* TSZHomeTableViewController.m in Sources */,
+				24879E011BE2E61D00299C5E /* MBProgressHUD+MJ.m in Sources */,
+				24879DF91BE2DB2F00299C5E /* TSZTabBar.m in Sources */,
 				24A8C76A1BE288A60051788B /* AppDelegate.m in Sources */,
 				24A8C7671BE288A60051788B /* main.m in Sources */,
 			);

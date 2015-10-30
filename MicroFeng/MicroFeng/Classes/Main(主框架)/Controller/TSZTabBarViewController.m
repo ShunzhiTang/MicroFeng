@@ -12,6 +12,7 @@
 #import "TSZDiscoverTableViewController.h"
 #import "TSZMessageTableViewController.h"
 #import "TSZMineTableViewController.h"
+#import "TSZTabBar.h"
 
 //宏定义 当前的IOS 版本
 #define  IOS7 (  [[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
@@ -20,9 +21,6 @@
 
 
 @interface TSZTabBarViewController ()
-
-//设置一个button的属性
-@property (nonatomic , strong)UIButton *centerButton;
 
 @end
 
@@ -33,14 +31,22 @@
    
     //设置子控制器
     [self setChilderController];
+    //准备UITabBar
+    [self setupTabBar];
+}
+#pragma  mark: 设置tabBar
+- (void)setupTabBar{
+    TSZTabBar *tabBar = [[TSZTabBar alloc]init];
+    [self setValue:tabBar forKeyPath:@"tabBar"];
 }
 
 /**
  * 子视图布置完成
  */
+
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-    [self customBtn];
+//    [self customBtn];
 }
 #pragma mark --需要给TarBar控制器设置子控制器
 
@@ -55,8 +61,8 @@
     [self controller:messageVc WithTitle:@"消息" image:@"tabbar_message_center" andSeleted:@"tabbar_message_center_highlighted"];
     
     //添加一个空的 控制器 ，撑开这个范围
-    UIViewController *vc = [[UIViewController alloc]init];
-    [self addChildViewController:vc];
+//    UIViewController *vc = [[UIViewController alloc]init];
+//    [self addChildViewController:vc];
     
     //3、第三个控制器
     TSZDiscoverTableViewController *discoverVc = [[TSZDiscoverTableViewController alloc] init];
@@ -98,37 +104,6 @@
     //包装Nav控制器
     TSZNavigationController *nav = [[TSZNavigationController alloc] initWithRootViewController:controller];
     [self addChildViewController:nav];
-}
-
-#pragma mark 创建一个button放在对应的位置上
-
-- (void)customBtn{
-    
-    if ( _centerButton == nil) {
-        _centerButton = [[UIButton alloc]init];
-    }
-    
-    //长度
-    CGFloat w = self.tabBar.bounds.size.width / self.childViewControllers.count;
-    CGRect rect = CGRectMake(0, 0, w, self.tabBar.bounds.size.height);
-    
-    //设置frmae
-    _centerButton.frame = CGRectOffset(rect, 2 * w, 0);
-    [_centerButton setImage:[UIImage imageNamed:@"tabbar_compose_icon_add"] forState:UIControlStateNormal];
-     [_centerButton setImage:[UIImage imageNamed:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateHighlighted];
-    
-    //设置背景图片
-    [_centerButton setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button"] forState:UIControlStateNormal];
-     [_centerButton setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button_highlighted"] forState:UIControlStateHighlighted];
-    
-    //设置一个监听事件
-    [_centerButton addTarget:self action:@selector(clickAdd) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.tabBar addSubview:_centerButton];
-}
-
-- (void)clickAdd{
-    NSLog(@"滴啊你了我怕");
 }
 
 @end
