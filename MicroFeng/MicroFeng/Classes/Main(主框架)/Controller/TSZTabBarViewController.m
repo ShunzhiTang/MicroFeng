@@ -14,13 +14,14 @@
 #import "TSZMineTableViewController.h"
 #import "TSZTabBar.h"
 
+#import "TSZSendMicroblogController.h"
 //宏定义 当前的IOS 版本
 #define  IOS7 (  [[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 //宏定义一个RGB的颜色
 #define TSZColor(r,g,b) [UIColor colorWithRed:(r)/255.0  green:(g)/255.0 blue:(b)/255.0 alpha: 1.0]
 
 
-@interface TSZTabBarViewController ()
+@interface TSZTabBarViewController () <TSZTabBarDelegate>
 
 @end
 
@@ -40,14 +41,7 @@
     [self setValue:tabBar forKeyPath:@"tabBar"];
 }
 
-/**
- * 子视图布置完成
- */
 
-- (void)viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
-//    [self customBtn];
-}
 #pragma mark --需要给TarBar控制器设置子控制器
 
 -(void)setChilderController{
@@ -104,6 +98,15 @@
     //包装Nav控制器
     TSZNavigationController *nav = [[TSZNavigationController alloc] initWithRootViewController:controller];
     [self addChildViewController:nav];
+}
+
+#pragma mark 实现协议方法
+-(void)tabbarDidClickSendButton:(TSZTabBar *)tabBer{
+    TSZSendMicroblogController *send = [[TSZSendMicroblogController alloc]init];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:send];
+//    [self presentModalViewController:nav animated:true];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 @end

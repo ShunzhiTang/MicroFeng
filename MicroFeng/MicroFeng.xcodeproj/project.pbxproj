@@ -18,6 +18,7 @@
 		24879E021BE2E61D00299C5E /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24879DFE1BE2E61D00299C5E /* MBProgressHUD.bundle */; settings = {ASSET_TAGS = (); }; };
 		24879E031BE2E61D00299C5E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879E001BE2E61D00299C5E /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
 		24879E071BE2E83D00299C5E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879E061BE2E83D00299C5E /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		24879E0D1BE3148300299C5E /* TSZSendMicroblogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24879E0C1BE3148300299C5E /* TSZSendMicroblogController.m */; settings = {ASSET_TAGS = (); }; };
 		24A8C7671BE288A60051788B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C7661BE288A60051788B /* main.m */; };
 		24A8C76A1BE288A60051788B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C7691BE288A60051788B /* AppDelegate.m */; };
 		24A8C7721BE288A60051788B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A8C7711BE288A60051788B /* Assets.xcassets */; };
@@ -46,6 +47,8 @@
 		24879E001BE2E61D00299C5E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		24879E051BE2E83D00299C5E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		24879E061BE2E83D00299C5E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		24879E0B1BE3148300299C5E /* TSZSendMicroblogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZSendMicroblogController.h; sourceTree = "<group>"; };
+		24879E0C1BE3148300299C5E /* TSZSendMicroblogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZSendMicroblogController.m; sourceTree = "<group>"; };
 		24A8C7621BE288A60051788B /* MicroFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A8C7661BE288A60051788B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24A8C7681BE288A60051788B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +129,31 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		24879E081BE3144E00299C5E /* SendMircblog(发微博) */ = {
+			isa = PBXGroup;
+			children = (
+				24879E091BE3144E00299C5E /* Controller */,
+				24879E0A1BE3144E00299C5E /* View */,
+			);
+			path = "SendMircblog(发微博)";
+			sourceTree = "<group>";
+		};
+		24879E091BE3144E00299C5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24879E0B1BE3148300299C5E /* TSZSendMicroblogController.h */,
+				24879E0C1BE3148300299C5E /* TSZSendMicroblogController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24879E0A1BE3144E00299C5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		24A8C7591BE288A60051788B = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +195,7 @@
 		24A8C77C1BE289B30051788B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				24879E081BE3144E00299C5E /* SendMircblog(发微博) */,
 				24879DDF1BE28CF800299C5E /* Main(主框架) */,
 				24A8C77D1BE289B30051788B /* Discover(发现) */,
 				24A8C7801BE289B30051788B /* Home(首页) */,
@@ -354,6 +383,7 @@
 				24879E031BE2E61D00299C5E /* MBProgressHUD.m in Sources */,
 				24879DF31BE2919C00299C5E /* TSZMineTableViewController.m in Sources */,
 				24879E071BE2E83D00299C5E /* UIView+Extension.m in Sources */,
+				24879E0D1BE3148300299C5E /* TSZSendMicroblogController.m in Sources */,
 				24879DED1BE2918300299C5E /* TSZHomeTableViewController.m in Sources */,
 				24879E011BE2E61D00299C5E /* MBProgressHUD+MJ.m in Sources */,
 				24879DF91BE2DB2F00299C5E /* TSZTabBar.m in Sources */,

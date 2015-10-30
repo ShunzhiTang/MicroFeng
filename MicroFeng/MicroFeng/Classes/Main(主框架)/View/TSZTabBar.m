@@ -13,8 +13,10 @@
 @interface TSZTabBar ()
 
 @property (nonatomic ,weak) UIButton *plusBtn;
-@end
+//定义一个背景图片
+@property (nonatomic , weak)UIImageView *backImage;
 
+@end
 
 @implementation TSZTabBar
 
@@ -23,6 +25,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        //设置背景image
+        [self addBackground];
+        
         //设置所需要的button
         [self setupBtn];
     }
@@ -50,6 +55,9 @@
     [btn setImage:[UIImage imageNamed:@"tabbar_compose_icon_add"] forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateHighlighted];
     
+    //设置btn的点击事件
+    [btn addTarget:self action:@selector(clickSend) forControlEvents:UIControlEventTouchUpInside];
+    
     //设置frame ，按钮的大小和背景图片的大小一致
     
     btn.size = btn.currentBackgroundImage.size;
@@ -59,6 +67,22 @@
     //使用它
     self.plusBtn = btn ;
 }
+
+//单击的方法
+- (void)clickSend{
+    
+    //实现动画效果
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        self.backImage.x = self.plusBtn.x;
+    }];
+    
+    //通知代理 ，代理去实现
+    if ([self.delegate respondsToSelector:@selector(tabbarDidClickSendButton:)]) {
+        [self.delegate tabbarDidClickSendButton:self];
+    }
+}
+
 
 #pragma mark:layoutSubviews  布局子控件必须这样写
 
@@ -72,6 +96,10 @@
     self.plusBtn.centerY = self.height * 0.5;
     //设置其他位置的尺寸
     CGFloat tabW = self.width  / 5 ;
+    
+    //设置背景图片的frame
+    self.backImage.frame = CGRectMake(0, 0, tabW, self.bounds.size.height);
+    
     
     //当前tab的索引
     CGFloat tabIndex = 0;
@@ -95,5 +123,21 @@
     }
 }
 
+#pragma - mark 添加按钮背景图片
+- (void)addBackground
+{
+    // 添加白色图片
+    UIImageView *backGroundImage = [[UIImageView alloc] init];
+    backGroundImage.image = [UIImage imageNamed:@"toolBar_shade"];
+    self.backImage = backGroundImage;
+    [self addSubview:backGroundImage];
+}
+
+
+#pragma mark 画出背景
+- (void)drawRect:(CGRect)rect{
+    UIImage *image = [UIImage imageNamed:@"tabBar_back"];
+    [image drawInRect:rect];
+}
 
 @end
